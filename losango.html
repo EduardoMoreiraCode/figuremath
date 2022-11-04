@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losango</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="losangoimg.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="losangoimg.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="backbtn.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Losango</h1>
+    </header>
+    <section>
+        <a class="backbtn" href="index.html">Voltar</a>
+    </section>
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário sobre o Losango</b></legend>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="dmenor" id="dmenor" class="inputUser" required>
+                    <label for="dmenor" class="labelInput">Diagonal Menor:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="dmaior" id="dmaior" class="inputUser" required>
+                    <label for="dmaior" class="labelInput">Diagonal Maior:</label>
+                </div>
+                <br><br>
+                <label><b>Fórmula: Área = (Diagonal Maior x diagonal menor)/2</b></label>
+                <br><br>
+                <label><b>Área:</b></label>
+                <label id="result"><b></b></label>
+                <br><br>
+                <input type="button" onclick="calcular()" name="submit" class="submit" value="Calcular">
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="losango.js"></script>
+</html>

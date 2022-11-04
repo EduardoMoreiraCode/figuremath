@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapézio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="trapezioimg.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="trapezioimg.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="backbtn.css">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Trapézio</h1>
+    </header>
+    <section>
+        <a class="backbtn" href="index.html">Voltar</a>
+    </section>
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Formulário sobre o Trapézio</b></legend>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="bmaior" id="bmaior" class="inputUser" required>
+                    <label for="bmaior" class="labelInput">Base Maior:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="bmenor" id="bmenor" class="inputUser" required>
+                    <label for="bmenor" class="labelInput">Base Menor:</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="altura" id="altura" class="inputUser" required>
+                    <label for="altura" class="labelInput">Altura:</label>
+                </div>
+                <br><br>
+                <label><b>Fórmula: Área = [ (Base Maior + base menor) / 2 ] x altura</b></label>
+                <br><br>
+                <label><b>Área:</b></label>
+                <label id="result"><b></b></label>
+                <br><br>
+                <input type="button" onclick="calcular()" name="submit" class="submit" value="Calcular">
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="trapezio.js"></script>
+</html>

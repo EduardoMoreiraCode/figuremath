@@ -1,0 +1,83 @@
+.box
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    /* width: 20%; */
+    min-width:320px;
+    max-width:800px;
+}
+
+fieldset
+{
+    border: 3px solid #329262;
+}
+
+legend
+{
+    border: 1px solid #329262;
+    padding: 10px;
+    text-align: center;
+    background-color: #329262;
+    border-radius: 8px;   
+}
+
+.inputBox
+{
+    position: relative;
+}
+
+.inputUser
+{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,/*qdo clicar no input user
+acontece tal coisa no label input*/
+.inputUser:valid ~ .labelInput /*qdo tiver escrito algo
+NÃO VOLTA AO NORMAL*/
+{
+    top: -20px;
+    font-size: 12px;
+    color: #1ab668;
+}
+
+.submit
+{
+    background-image: linear-gradient(to left, #40a171, #000000);
+    width: 100%;
+    border: 2px solid #1ab668;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit:hover
+{
+    background-image: linear-gradient(to left, #286949, #000000);
+    border:2px solid #286949;
+}
