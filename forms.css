@@ -81,3 +81,11 @@ NÃO VOLTA AO NORMAL*/
     background-image: linear-gradient(to left, #286949, #000000);
     border:2px solid #286949;
 }
+
+@media screen and (max-width:600px) 
+{
+    .box
+    {
+        margin-top: 50px;
+    }    
+}
