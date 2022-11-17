@@ -4,7 +4,7 @@ function calcular()
     let bmenor = document.getElementById("bmenor").value;
     let h = document.getElementById("altura").value;
 
-    let r = [(bMaior+bmenor)/2]*h;
+    let r = ((parseFloat(bMaior)+parseFloat(bmenor))/2)*h;
 
     document.getElementById("result").innerHTML = r;
 }
