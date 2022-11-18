@@ -89,3 +89,11 @@ NÃO VOLTA AO NORMAL*/
         margin-top: 50px;
     }    
 }
+
+@media screen and (max-width:350px) 
+{
+    .box
+    {
+        min-width: 290px;
+    }    
+}
